@@ -3,24 +3,31 @@ package turismoTierraMedia;
 public class Atraccion {
 
 	private int costo;
-	private int tiempo;
+	private double tiempo;
 	private int cupo;
-	public Atraccion(int costo, int tiempo, int cupo) {
-		super();
+	private TipoDeAtraccion tipo;
+	public Atraccion(int costo, int tiempo, int cupo, TipoDeAtraccion tipo) {
 		this.costo = costo;
 		this.tiempo = tiempo;
 		this.cupo = cupo;
+		this.tipo = tipo;
 	}
 
 	protected int getCosto() {
 		return costo;
 	}
 
-	protected int getTiempo() {
+	protected double getTiempo() {
 		return tiempo;
 	}
 
 	protected int getCupo() {
 		return cupo;
 	}
+
+	protected TipoDeAtraccion getTipo() {
+		return tipo;
+	}
+	
+	
 }
